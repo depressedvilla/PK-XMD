@@ -10,7 +10,7 @@ const fakeContact = {
   },
   message: {
     contactMessage: {
-      displayName: "PKDRILLER | PK-XMD",
+      displayName: "DIVINE | DIVINE-XMD",
       vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:PKDRILLER | PK-XMD\nORG:PKDRILLER;\nTEL;type=CELL;type=VOICE;waid=254700000000:+254 700 000000\nEND:VCARD`,
       jpegThumbnail: Buffer.alloc(0)
     }
@@ -21,7 +21,7 @@ const getContextInfo = (title, url, thumb) => ({
   externalAdReply: {
     showAdAttribution: true,
     title: title,
-    body: "PK-XMD | Multi-Device WhatsApp Bot",
+    body: "DIVINE-XMD | Multi-Device WhatsApp Bot",
     thumbnailUrl: thumb || "https://telegra.ph/file/3050269176219cc6e3b8d.jpg",
     sourceUrl: url || "https://github.com/pkdriller1911/PK-XMD"
   },
@@ -36,8 +36,8 @@ const getContextInfo = (title, url, thumb) => ({
 const customReplies = (q) => {
   const lower = q.toLowerCase();
   const today = moment().tz("Africa/Nairobi");
-  if (lower.includes("pk-xmd")) return "🔥 PK-XMD is a Multi-Device WhatsApp Bot made by *PKDRILLER*.";
-  if (lower.includes("pkdriller")) return "👑 PKDRILLER is the official creator of the *PK-XMD* WhatsApp bot.";
+  if (lower.includes("divine-xmd")) return "🔥 DIVINE-XMD is a Multi-Device WhatsApp Bot made by *DIVINE*.";
+  if (lower.includes("divine")) return "👑 DIVINE is the official creator of the *DIVINE-XMD* WhatsApp bot.";
   if (lower.includes("channel")) return "📢 Official channel: https://whatsapp.com/channel/0029VaA8mf6K1nF3IbQzvK3Z";
   if (lower.includes("repo") || lower.includes("github")) return "🔗 GitHub repo: https://github.com/pkdriller1911/PK-XMD";
   if (lower.includes("date") || lower.includes("today")) return `📅 Today is ${today.format("dddd, MMMM Do YYYY")}`;
