@@ -29,7 +29,7 @@ const getContextInfo = (title, url, thumb) => ({
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid: '120363025151570371@newsletter',
-    newsletterName: 'PK-XMD Updates'
+    newsletterName: 'DIVINE-XMD Updates'
   }
 });
 
